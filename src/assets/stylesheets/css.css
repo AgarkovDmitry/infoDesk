@@ -1,0 +1,206 @@
+#footer {
+	position: fixed; /* Фиксированное положение */
+	left: 0; bottom: 0; /* Левый нижний угол */
+	padding: 10px; /* Поля вокруг текста */
+}
+
+body{
+    background: url('../images/bg2.jpg') no-repeat center top fixed;
+		font-family: 'Comic Sans MS';
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.Description{
+		text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+th{
+	text-align: center !important;
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+td{
+	text-align: center !important;
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+
+.paper{
+	padding: 40px !important;
+	margin-top: 40px !important;
+	border-radius: 8px !important;
+	text-align: center !important;
+}
+
+.navButtonLogin{
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	z-index: 200;
+	top: 1%;
+	right: 1%;
+}
+
+.navButtonAdd{
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	z-index: 200;
+	top: 1%;
+	left: 1%;
+}
+
+.navButtonUp{
+	left: 48%;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	z-index: 200;
+	top: 1%;
+}
+
+.navButtonDown{
+	left: 48%;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	z-index: 200;
+	bottom: 1%;
+}
+
+.navButtonLeft{
+	top: 50%;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	left: 1%;
+	z-index: 200;
+}
+
+.objectContainer{
+	padding: 0px;
+	height: 100%;
+	position: relative;
+}
+.objectTransition:hover{
+	transition: 1s;
+}
+
+.objectContainer .objectImage{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(100%);
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 1s;
+}
+.objectContainer .objectTextArea{
+	z-index: 100;
+	height: auto;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	padding-bottom: 1%;
+	transition: 1s;
+}
+.objectContainer .objectNumber{
+	cursor: pointer;
+	transform: scale(1);
+	color: green;
+	text-shadow: black 0 0 2px;
+	font-weight: bold;
+	text-align: center;
+	opacity: 1;
+	z-index: 100;
+  position: absolute;
+	top: 35%;
+	left: 45%;
+  font-size: 60px;
+	transition: 1s;
+}
+.objectContainer .objectHeader{
+	color: green;
+  text-shadow: black 0 0 3px;
+	display: flex;
+	font-weight: bold;
+	margin-left: 10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+  font-size: 30px;
+	transition: 1s;
+}
+.objectContainer .objectButton{
+	cursor: pointer;
+	opacity: 0;
+	transition: 1s;
+}
+.objectContainer .objectExtra{
+	margin-bottom: 2%;
+	opacity: 0;
+	transition: 1s;
+}
+
+.objectContainer:hover .objectImage{
+	filter: grayscale(0%);
+	opacity: 1;
+}
+.objectContainer:hover .objectTextArea{
+	background-color: rgba(black, 0.7);
+	z-index: 100;
+	position: absolute;
+	bottom: 0%;
+	height: auto;
+	width: 100%;
+}
+.objectContainer:hover .objectNumber{
+	transform: scale(3);
+	opacity: 0;
+	transition: 1s;
+}
+.objectContainer:hover .objectHeader{
+	color: white;
+	font-weight: bold;
+	margin-left: 10%;
+	color: white;
+	font-size: 30px;
+}
+.objectContainer:hover .objectButton{
+	opacity: 1;
+}
+.objectContainer:hover .objectExtra{
+	opacity: 1;
+}
+
+.objectExtraItem{
+	display: flex;
+	text-align: center;
+	margin: 0px;
+	color: white;
+}
+
+	@media (max-width: 992px){
+
+	}
